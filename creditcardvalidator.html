@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>The Credit Card Validator</title>
+
+
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="projectstyle.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="topnav" id="myHeader">
+    <a href="index.html" class="active"><img src="Logo.png" width="10%" ></a>
+    <div id="myLinks">
+    <a href="index.html#about" title="About Me Section">About</a>
+    <a href="index.html#projects" title="My projects">Projects</a>
+
+    </div>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+     <a href="javascript:void(0);" class="icon" onclick="hamburger()">
+        <i class="fa fa-bars"></i>
+      </a>
+
+    </div>
+    <div class='projectpens'>
+    	<h2 class='title'>Credit Card Validation</h2>
+      <p>Press the green arrow to get started! This project uses the console to display if the card number is valid. After you enter the card number click the console button!</p>
+    	<iframe height="800px" width="100%" src="https://repl.it/@lenyg/Card-Valid?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+    <p class="projecttxt"> In this project we created a script that will validate a credit card number. The validator takes the following conditions: Number must be 16 digits, all of them must be numbers
+	    <br>You must have at least two different digits represented (all of the digits cannot be the same)
+	    <br>The final digit must be even
+	    <br>The sum of all the digits must be greater than 16
+    <br>These card numbers are valid:
+    <br>
+    <br>9999999988880000
+    <br>6666666666661666
+    <br>The following credit card numbers are invalid:
+    <br>
+    <br>a92332119c011112 invalid characters
+    <br>4444444444444444 only one type of number
+    <br>1111111111111110 sum less than 16
+    <br>6666666666666661 odd final number</p>
+  </div>
+  <script src="script.js"></script>
+  </body>
+</html>
